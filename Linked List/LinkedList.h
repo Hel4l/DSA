@@ -12,8 +12,8 @@ struct Node {
 
 class LinkedList {
 private:
-    Node *node;
-    Node *cur;
+    Node *head;
+    Node *tail;
     int size;
 public:
 
@@ -36,6 +36,8 @@ public:
     void display();
 
     void reverseDisplay();
+
+    void reverseRec();
 
     bool search(int x);
 
